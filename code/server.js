@@ -34,7 +34,7 @@ log('Loaded configuration')
 
 // Local code
 const router = require('./routes/')
-const webhookRouter = require('./routes/webhooks.js')
+const webhookRouter = require('./routes/webhooks')
 
 // Create a new app
 const app = new Koa()
