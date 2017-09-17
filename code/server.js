@@ -79,6 +79,7 @@ app.use(async (ctx, next) => {
       `cdn.${process.env.DOMAIN}`,
       'cdnjs.cloudflare.com',
       'ajax.cloudflare.com',
+      'amp.cloudflare.com',
       'www.google-analytics.com',
       'analytics.google.com',
       'www.google.com',
