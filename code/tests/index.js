@@ -4,10 +4,10 @@ const supertest = require('supertest') // Routing testing
 // Set up our requesting object
 test.request = supertest(require('../server')) // Routing
 
-// Tests in debug mode
-require('./page_tests.js')(test)
-require('./content_tests.js')(test)
-require('./header_tests.js')(test)
+// Request/response tests
+require('./page_tests')(test)
+require('./content_tests')(test)
+require('./header_tests')(test)
 
 // Webhook tests
-require('./webhooks/tba_tests.js')(test)
+require('./webhooks/tba_tests')(test)
